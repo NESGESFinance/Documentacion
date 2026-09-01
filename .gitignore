@@ -1,0 +1,310 @@
+# ============================================================
+# NESGESFinance Ecosystem — Documentación Institucional v3.1
+# Repositorio: NESGESFinance/Documentacion
+#
+# Propósito:
+# Evitar la publicación accidental de secretos, datos personales,
+# expedientes KYC/AML, borradores internos y archivos temporales.
+#
+# Este repositorio SÍ debe versionar documentos institucionales
+# aprobados: .md, .csv, .pdf, imágenes y archivos fuente autorizados.
+# ============================================================
+
+# ------------------------------------------------------------
+# Sistema operativo
+# ------------------------------------------------------------
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# Editores e IDEs
+# ------------------------------------------------------------
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+*.swp
+*.swo
+*~
+.history/
+.cursor/
+.windsurf/
+
+# ------------------------------------------------------------
+# Archivos temporales de Microsoft Office, LibreOffice y PDF
+# ------------------------------------------------------------
+
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
+~$*.odt
+~$*.ods
+~$*.odp
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+*.docx.tmp
+*.xlsx.tmp
+*.pptx.tmp
+*.pdf.tmp
+
+# ------------------------------------------------------------
+# Secretos, credenciales y configuración privada
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+secrets/
+secret/
+credentials/
+credential/
+private/
+keys/
+key/
+wallets/
+wallet/
+seed/
+seeds/
+
+*.pem
+*.key
+*.crt
+*.cer
+*.csr
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+*.secret
+*.secrets
+*.token
+*.tokens
+*.credential
+*.credentials
+*.password
+*.passwd
+
+# Nunca versionar claves privadas, frases semilla o respaldos de wallets
+private-key*
+private_key*
+privkey*
+seed-phrase*
+seed_phrase*
+mnemonic*
+wallet-backup*
+wallet_backup*
+keystore*
+
+# ------------------------------------------------------------
+# Datos personales, KYC, AML, CFT y cumplimiento restringido
+# ------------------------------------------------------------
+
+kyc/
+aml/
+cft/
+pep/
+sanctions/
+travel-rule/
+travel_rule/
+compliance-private/
+compliance_internal/
+personal-data/
+private-data/
+restricted/
+confidential/
+confidencial/
+datos-personales/
+datos-kyc/
+datos-aml/
+documentos-identidad/
+identificaciones/
+biometria/
+biometricos/
+
+*.kyc
+*.aml
+*.cft
+*.pep
+*.sanctions
+*.biometric
+*.biometria
+*.identity
+*.id-document
+*.id_document
+*.passport
+*.cedula
+*.dni
+
+# Archivos de carga, evidencia o prueba que puedan contener datos personales
+uploads/
+user-uploads/
+private-uploads/
+test-data/private/
+test-data/personal/
+fixtures/private/
+fixtures/personal/
+
+# ------------------------------------------------------------
+# Borradores y documentos internos no autorizados para publicación
+# ------------------------------------------------------------
+
+drafts/
+borradores/
+working/
+work-in-progress/
+wip/
+internal/
+interno/
+private-docs/
+documentacion-privada/
+revisiones-internas/
+legal-private/
+legal-internal/
+
+# ------------------------------------------------------------
+# Reportes, exportaciones y respaldos internos
+# ------------------------------------------------------------
+
+backups/
+backup/
+dumps/
+dump/
+exports/
+export/
+snapshots/
+local-data/
+database-data/
+private-reports/
+internal-reports/
+
+*.sql
+*.sql.gz
+*.dump
+*.bson
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite3-journal
+
+# ------------------------------------------------------------
+# Registros y archivos de trabajo
+# ------------------------------------------------------------
+
+*.log
+*.log.*
+logs/
+log/
+tmp/
+temp/
+.cache/
+.cache-loader/
+
+# ------------------------------------------------------------
+# Material multimedia restringido
+# ------------------------------------------------------------
+
+private-media/
+restricted-media/
+raw-recordings/
+unreleased-media/
+
+# ------------------------------------------------------------
+# Datos tabulares sensibles por patrón de nombre
+#
+# No se ignoran CSV, XLSX ni PDF de manera global porque pueden ser
+# documentos institucionales legítimos y publicados. Solo se excluyen
+# los archivos que presenten nombres indicativos de datos restringidos.
+# ------------------------------------------------------------
+
+**/*private*.csv
+**/*private*.tsv
+**/*private*.xlsx
+**/*private*.xls
+
+**/*confidential*.csv
+**/*confidential*.tsv
+**/*confidential*.xlsx
+**/*confidential*.xls
+
+**/*personal*.csv
+**/*personal*.tsv
+**/*personal*.xlsx
+**/*personal*.xls
+
+**/*kyc*.csv
+**/*kyc*.tsv
+**/*kyc*.xlsx
+**/*kyc*.xls
+
+**/*aml*.csv
+**/*aml*.tsv
+**/*aml*.xlsx
+**/*aml*.xls
+
+**/*biometric*.csv
+**/*biometric*.tsv
+**/*biometric*.xlsx
+**/*biometric*.xls
+
+# ------------------------------------------------------------
+# Archivos locales de configuración
+# ------------------------------------------------------------
+
+*.local
+*.local.*
+config.local.*
+settings.local.*
+local.settings.*
+local.config.*
+
+!*.example
+!*.sample
+!*.template
+
+# ------------------------------------------------------------
+# Excepciones documentales explícitas
+#
+# Estos archivos son controles institucionales y deben permanecer
+# versionados cuando hayan sido aprobados para publicación.
+# ------------------------------------------------------------
+
+!README.md
+!LICENSE
+!.gitignore
+!CHANGELOG_DOCUMENTAL.md
+!CHECKLIST_PUBLICACION_GITHUB_PAGES.md
+!GLOSARIO_NESGESFinance.md
+!MATRIZ_TRAZABILIDAD_CLAIMS.csv
+!Politica_Control_Documental.md
+
+# Los PDF institucionales aprobados deben versionarse.
+# No añadir una regla global del tipo: *.pdf
